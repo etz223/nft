@@ -1,0 +1,100 @@
+
+
+body{
+    background-color: rgb(0, 52, 66);
+}
+
+p{
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* header{
+    position: fixed;
+    width: 100%;
+    margin-top: 13%;
+} */
+
+
+
+
+.bio{
+    max-width: 450px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+h1{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:  rgb(255, 219, 127);
+}
+
+h2{
+    margin-top: 2px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(0, 39, 49);
+    color:  rgb(255, 219, 127);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2:hover {
+    background-color: rgb(2, 61, 75);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Ombre légère pour un effet 3D */
+
+}
+
+h3{
+    margin-top: 8%;
+    font-size: 20px;
+    margin-left: 20px;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.centre {
+    position: sticky; /* La colonne reste en place lorsque l'utilisateur défile */
+    top: 0; /* Place la colonne au sommet de la fenêtre */
+    height: 100vh; /* Remplit toute la hauteur de la fenêtre */
+    overflow-y: auto; /* Permet le défilement interne au cas où le contenu déborde */
+    background-color: rgb(0, 52, 66); /* Maintient le fond de la colonne centrale */
+    padding: 10px;
+}
+
+.gauche, .droite {
+    flex-direction: column; /* Organisation verticale des éléments */
+    gap: 20px; /* Espacement uniforme entre les éléments dans chaque colonne */
+}
+
+img {
+    aspect-ratio: 1.2/1;
+    width: 100%; /* Images s'ajustent à leur conteneur */
+    height: auto;
+}
+
+a{
+    color: rgb(255, 219, 127);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center
+}
+
+#archives, #memo, #casa, #machine{
+    font-size: 15px;
+    margin-bottom: 4em;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: start;
+    max-width: 480px;
+}
